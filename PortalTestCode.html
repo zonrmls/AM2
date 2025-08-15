@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Page Title</title>
+    <script type='text/javascript' src="https://alvarezandmarsal--matt.sandbox.my.site.com/xLOut/lightning/lightning.out.js"></script>
+</head>
+<body>
+	<div id="container"></div>
+    
+    <script>
+$Lightning.use("c:LOutApp",
+function() { //callback once framework and app load
+$Lightning.createComponent(
+"lightning:flow",
+{ },
+"container",
+function(component) { //API name of the flow
+component.startFlow("xCreate_New_Account");
+}
+);
+}, 'https://alvarezandmarsal--matt.sandbox.my.site.com/xLOut' //site endpoint
+);
+</script>
+</body>
+</html>
